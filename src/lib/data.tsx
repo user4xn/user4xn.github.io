@@ -7,7 +7,6 @@ import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
 import LogoSocket from '/public/images/logos/icon-socket.svg';
 import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
 import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
 import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
 import LogoFigma from '/public/images/logos/icon-figma.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
@@ -17,6 +16,7 @@ import LogoPostman from '/public/images/logos/icon-postman.svg';
 import LogoLaravel from '/public/images/logos/icon-laravel.svg';
 import LogoCi from '/public/images/logos/icon-ci.svg';
 import LogoRedis from '/public/images/logos/icon-redis.svg';
+import LogoRabbitMQ from 'public/images/logos/icon-rabbitmq.svg'
 
 import LogoWsb from '/public/images/logos/logo-wsb.svg';
 
@@ -133,11 +133,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.postgresql.org/',
   },
   {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
     label: 'Tailwindcss',
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com/',
@@ -156,6 +151,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     label: 'Git',
     logo: LogoGit,
     url: 'https://git-scm.com/',
+  },
+  {
+    label: 'RabbitMQ',
+    logo: LogoRabbitMQ,
+    url: 'https://www.rabbitmq.com/',
   },
 ];
 
@@ -264,6 +264,7 @@ export const PROJECTS: ProjectDetails[] = [
       'Firebase',
       'Flutter',
       'Vue',
+      'RabbitMQ'
     ],
   },
   {
