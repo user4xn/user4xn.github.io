@@ -19,10 +19,10 @@ const AboutMeSection = () => {
             <Image
               src={FullPoseImage}
               alt="Fullpose of Wildan"
-              className="absolute z-10 h-[360px] w-[280px] border-8 border-white max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px] rounded-lg"
+              className="absolute z-10 h-[360px] w-[280px] border-8 border-white max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px] rounded-[50px]"
               style={{ objectFit: 'cover',  objectPosition: 'top' }}
             ></Image>
-            <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px] rounded-lg"></div>
+            <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px] rounded-[50px]"></div>
           </div>
         </div>
 

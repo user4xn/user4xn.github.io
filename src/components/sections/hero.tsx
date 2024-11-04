@@ -16,10 +16,10 @@ const HeroSection = () => {
             <Image
               src={ProfileHeadshot}
               alt="Headshot of Wildan"
-              className="absolute z-10 h-[280px] w-[240px] border-8 border-white max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px] rounded-lg"
+              className="absolute z-10 h-[280px] w-[240px] border-8 border-white max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px] rounded-[50px]"
               style={{ objectFit: 'cover' }}
             ></Image>
-            <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px] rounded-lg"></div>
+            <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px] rounded-[50px]"></div>
           </div>
         </div>
 
@@ -31,9 +31,11 @@ const HeroSection = () => {
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>
             <Typography>
-                I&apos;m a person who enjoys every step of the coding process. 
-                I want to find solutions to problems and feel proud of my work when it helps others.
-                I have over 4 years experience on Software Engineering, let&apos;s collaborate and make a positive impact together.
+              An enthusiastic Back End Developer With experience in backend development, full-stack roles, and project management.<br/>
+              My technical abilities are supported by hands-on experience with technologies such as Golang, PHP (Laravel, CI), and JavaScript (Vue, Express), as well as my understanding of database management. I've worked on plenty of projects, such as web-based integrations, internal tools, and large-scale government systems. I take pride in writing clean, bug-free code and making sure that every solution I create follows industry best practices.
+              <br/>
+              <br/>
+              Collaboration is basic to my work, so I enjoy working closely with front-end developers, product teams, and other stakeholders to create systems that not only function properly but also provide a consistent user experience.
             </Typography>
           </div>
           <div className="flex flex-col gap-2">
@@ -49,7 +51,7 @@ const HeroSection = () => {
                   <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
                 </span>
               </div>
-              <Typography>Available for new projects</Typography>
+              <Typography>Freelance Ready</Typography>
             </div>
           </div>
           <SocialIcons />
