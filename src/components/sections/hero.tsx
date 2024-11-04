@@ -32,7 +32,7 @@ const HeroSection = () => {
             </Typography>
             <Typography>
               An enthusiastic Back End Developer With experience in backend development, full-stack roles, and project management.<br/>
-              My technical abilities are supported by hands-on experience with technologies such as Golang, PHP (Laravel, CI), and JavaScript (Vue, Express), as well as my understanding of database management. I've worked on plenty of projects, such as web-based integrations, internal tools, and large-scale government systems. I take pride in writing clean, bug-free code and making sure that every solution I create follows industry best practices.
+              My technical abilities are supported by hands-on experience with technologies such as Golang, PHP (Laravel, CI), and JavaScript (Vue, Express), as well as my understanding of database management. I&apos;ve worked on plenty of projects, such as web-based integrations, internal tools, and large-scale government systems. I take pride in writing clean, bug-free code and making sure that every solution I create follows industry best practices.
               <br/>
               <br/>
               Collaboration is basic to my work, so I enjoy working closely with front-end developers, product teams, and other stakeholders to create systems that not only function properly but also provide a consistent user experience.
