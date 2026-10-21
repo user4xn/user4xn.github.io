@@ -9,13 +9,14 @@
     "a11y.skip": "Lompat ke konten",
 
     "nav.work": "Karya",
+    "nav.agents": "Agen",
     "nav.about": "Tentang",
     "nav.experience": "Pengalaman",
     "nav.contact": "Kontak",
 
-    "hero.eyebrow": "Backend engineer · Purbalingga, Indonesia",
+    "hero.eyebrow": "Backend engineer · pembangun AI agent · Purbalingga, Indonesia",
     "hero.title": "Saya membangun backend yang menggerakkan uang, paket, dan kapal.",
-    "hero.lede": "Empat tahun menulis Go dan PHP untuk sistem produksi: mesin harga ongkir, ledger saldo, layanan pembayaran, dan integrasi yang menghubungkannya ke dunia luar. Saya peduli pada arsitektur yang jelas, penanganan error yang jujur, dan sistem yang tetap membosankan saat beban naik.",
+    "hero.lede": "Empat tahun menulis Go dan PHP untuk sistem produksi: mesin harga ongkir, ledger saldo, layanan pembayaran, dan integrasi yang menghubungkannya ke dunia luar. Belakangan saya juga membangun dan menjalankan tim AI agent sendiri — peran terpisah, kebijakan tool, cron, dan monitoring — karena begitulah software ditulis sekarang.",
     "hero.cv": "Unduh CV (PDF)",
     "hero.alt": "Foto Wildan Kurnia Candra",
     "hero.caption": "Purbalingga, Jawa Tengah",
@@ -24,6 +25,14 @@
     "metric.carriers": "integrasi kurir & logistik",
     "metric.platforms": "platform dibangun end to end",
     "metric.awards": "finalis LKS tingkat provinsi",
+
+    "agents.eyebrow": "Agent engineering",
+    "agents.title": "Saya membangun dan menjalankan tim AI agent sendiri.",
+    "agents.p1": "Bukan satu chatbot dengan prompt panjang — tapi kantor kecil berisi agent terspesialisasi, masing-masing punya profil, tool, dan izin sendiri, mengerjakan repo dan server sungguhan. Dia menulis kode, me-review, memverifikasi, dan melapor lewat Telegram saat saya jauh dari keyboard.",
+    "agents.b1": "<strong>Peran, bukan monolit.</strong> Chief of staff membagi kerja; PM menyusun scope; engineer membangun; agent QA memverifikasi di context terpisah supaya tidak ada yang menyetujui hasil kerjanya sendiri.",
+    "agents.b2": "<strong>Izin di level kebijakan.</strong> Sub-agent hanya dapat akses Git read-only, build guard memblokir perintah yang menghabiskan RAM di host 2 GB, dan rilis tetap keputusan manusia.",
+    "agents.b3": "<strong>Observability, karena agent bisa berbohong.</strong> Live activity wall, digest cron, memory watchdog, dan tail log — pekerjaan baru dianggap selesai kalau buktinya terlihat di layar.",
+    "agents.stack": "Hermes Agent · tool MCP · gateway Telegram · state SQLite · cron · systemd · VPS self-hosted",
 
     "work.title": "Karya pilihan",
     "work.sub": "Empat sistem yang saya rancang dan bangun: tooling deploy self-hosted, aplikasi kasir PWA, backend pelacakan kapal untuk kementerian, dan satu showcase yang tidak sempat rilis.",
@@ -136,9 +145,34 @@
     return nav.indexOf("id") === 0 ? "id" : "en";
   }
 
+  function initReveal() {
+    var items = document.querySelectorAll(".reveal");
+    if (!items.length) return;
+    if (!("IntersectionObserver" in window)) {
+      items.forEach(function (el) { el.classList.add("is-in"); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.05 });
+    items.forEach(function (el) { io.observe(el); });
+    // elemen yang sudah terlihat saat load jangan menunggu scroll
+    requestAnimationFrame(function () {
+      items.forEach(function (el) {
+        if (el.getBoundingClientRect().top < window.innerHeight * 0.9) el.classList.add("is-in");
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     captureEnglish();
     apply(preferred());
+    initReveal();
 
     var btn = document.getElementById("langBtn");
     if (btn) {

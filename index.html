@@ -24,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="assets/style.css">
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,6 +46,7 @@
   <a class="brand" href="#top"><span class="brand-dot"></span>Wildan Kurnia Candra</a>
   <nav class="nav" aria-label="Sections">
     <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#agents" data-i18n="nav.agents">Agents</a>
     <a href="#about" data-i18n="nav.about">About</a>
     <a href="#experience" data-i18n="nav.experience">Experience</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -56,7 +58,7 @@
 
 <main id="main">
   <section class="hero" id="top">
-    <p class="eyebrow" data-i18n="hero.eyebrow">Backend engineer · Purbalingga, Indonesia</p>
+    <p class="eyebrow" data-i18n="hero.eyebrow">Backend engineer · AI agent builder · Purbalingga, Indonesia</p>
     <div class="hero-grid">
       <div class="hero-lead">
         <h1 data-i18n="hero.title">I build the backend that moves money, parcels, and ships.</h1>
@@ -66,7 +68,7 @@
         <figcaption data-i18n="hero.caption">Purbalingga, Central Java</figcaption>
       </figure>
       <div class="hero-copy">
-        <p class="lede" data-i18n="hero.lede">Four years of Go and PHP in production: shipment pricing engines, wallet ledgers, payment services, and the integrations that keep them talking to the outside world. I care about clear architecture, honest error handling, and systems that stay boring under load.</p>
+        <p class="lede" data-i18n="hero.lede">Four years of Go and PHP in production: shipment pricing engines, wallet ledgers, payment services, and the integrations that keep them talking to the outside world. Lately I also build and run my own AI agent team — separate roles, tool policies, cron jobs and monitoring — because that is how software is being written now.</p>
         <ul class="hero-links">
           <li><a class="link" href="mailto:wildan.desperado@gmail.com">wildan.desperado@gmail.com</a></li>
           <li><a class="link" href="https://github.com/user4xn/" target="_blank" rel="noopener">github.com/user4xn</a></li>
@@ -90,7 +92,7 @@
       <p class="section-sub" data-i18n="work.sub">Four systems I designed and built: self-hosted deployment tooling, a cashier PWA, a live vessel-tracking backend for a government ministry, and one showcase that never shipped.</p>
     </header>
 
-    <article class="case">
+    <article class="case reveal">
       <div class="case-media case-media-shot">
         <p class="case-tag" data-i18n="case1.tag">DASHBOARD</p>
         <img src="assets/img/shipdude.webp?v=5" width="1400" height="807" alt="ShipDude deployment dashboard showing an active container, rollback controls and CI/CD bootstrap" data-i18n-alt="case1.alt" loading="lazy">
@@ -108,7 +110,7 @@
       </div>
     </article>
 
-    <article class="case case-rev">
+    <article class="case case-rev reveal">
       <div class="case-media case-media-mock">
         <p class="case-tag" data-i18n="case2.tag">PRODUCT OVERVIEW</p>
         <img src="assets/img/danzpos.webp?v=5" width="1280" height="720" alt="Danz Pos product overview: cashier tablet, order panel, receipt preview and thermal printer" data-i18n-alt="case2.alt" loading="lazy">
@@ -128,7 +130,7 @@
       </div>
     </article>
 
-    <article class="case">
+    <article class="case reveal">
       <div class="case-media case-media-mock">
         <p class="case-tag" data-i18n="case3.tag">LIVE DASHBOARD</p>
         <img src="assets/img/simple.webp?v=8" width="1400" height="682" alt="SIMPLE harbour dashboard: vessel positions on a map with a geofence polygon, check-in table and vessel detail panel" data-i18n-alt="case3.alt">
@@ -146,7 +148,7 @@
       </div>
     </article>
 
-    <article class="case case-rev">
+    <article class="case case-rev reveal">
       <div class="case-media case-media-mock">
         <p class="case-tag" data-i18n="case4.tag">SHOWCASE · BUILT, NOT RELEASED</p>
         <img src="assets/img/lemparkoin-dashboard.webp?v=9" width="1400" height="678" alt="Lemparkoin dashboard: coin wallet balance, incoming and outgoing totals and a recent donors table" data-i18n-alt="case4.alt" loading="lazy">
@@ -166,7 +168,41 @@
     </article>
   </section>
 
-  <section class="about" id="about">
+  <section class="agents" id="agents">
+    <div class="agents-inner">
+      <p class="eyebrow eyebrow-light" data-i18n="agents.eyebrow">Agent engineering</p>
+      <h2 data-i18n="agents.title">I run my own AI agent team.</h2>
+      <div class="agents-grid">
+        <div class="agents-copy">
+          <p data-i18n="agents.p1">Not one chatbot with a long prompt — a small office of specialised agents, each with its own profile, tools and permissions, working on real repositories and real servers. It writes code, reviews it, verifies it, and reports back over Telegram while I am away from the keyboard.</p>
+          <ul class="agents-points">
+            <li data-i18n="agents.b1"><strong>Roles, not a monolith.</strong> A chief of staff routes work; a PM scopes it; an engineer builds it; a QA agent verifies it in a separate context so nothing self-approves.</li>
+            <li data-i18n="agents.b2"><strong>Policy-level permissions.</strong> Sub-agents get read-only Git access, a build guard blocks memory-killing commands on a 2 GB host, and releases stay a human decision.</li>
+            <li data-i18n="agents.b3"><strong>Observability, because agents lie.</strong> Live activity wall, cron digests, memory watchdog and log tails — the work is only "done" when the evidence is on screen.</li>
+          </ul>
+          <p class="agents-stack" data-i18n="agents.stack">Hermes Agent · MCP tools · Telegram gateway · SQLite state · cron · systemd · self-hosted VPS</p>
+        </div>
+        <figure class="terminal" aria-label="Agent roster console output">
+          <div class="terminal-bar"><i></i><i></i><i></i><em>hermes office — status</em></div>
+<pre class="terminal-body"><span class="t-dim">$</span> hermes office status
+
+  <span class="t-key">snowy</span>    chief of staff   <span class="t-on">● online</span>   routes work, reviews PRs
+  <span class="t-key">poki</span>     product manager  <span class="t-on">● online</span>   scope, priority, status
+  <span class="t-key">beluga</span>   engineer         <span class="t-on">● online</span>   builds, tests, branches
+  <span class="t-key">zero</span>     qa               <span class="t-on">● online</span>   verifies, reports severity
+
+  <span class="t-dim">gateway</span>   telegram · 4 bots
+  <span class="t-dim">guards</span>    read-only git for sub-agents · build guard
+  <span class="t-dim">monitor</span>   live activity wall · cron digests
+  <span class="t-dim">host</span>      2 vCPU / 1.9 GB VPS, self-managed
+
+<span class="t-dim">$</span> <span class="cursor">▍</span></pre>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="about reveal" id="about">
     <div class="about-grid">
       <h2 data-i18n="about.title">About</h2>
       <div class="about-copy">
@@ -182,7 +218,7 @@
     </div>
   </section>
 
-  <section class="experience" id="experience">
+  <section class="experience reveal" id="experience">
     <header class="section-head">
       <h2 data-i18n="exp.title">Experience</h2>
     </header>
@@ -214,7 +250,7 @@
     </ol>
   </section>
 
-  <section class="skills" id="skills">
+  <section class="skills reveal" id="skills">
     <header class="section-head">
       <h2 data-i18n="skills.title">Toolkit</h2>
     </header>
@@ -238,7 +274,7 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact reveal" id="contact">
     <h2 data-i18n="contact.title">Let's talk</h2>
     <p class="contact-sub" data-i18n="contact.sub">Backend work, integrations, or a system that needs untangling — send a note.</p>
     <a class="contact-mail" href="mailto:wildan.desperado@gmail.com">wildan.desperado@gmail.com</a>
