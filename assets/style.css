@@ -310,6 +310,17 @@ p:last-child { margin-bottom: 0; }
   background: #0f1116;
 }
 .case-media-mock img { background: #f4f0e8; object-position: center; padding: 6px; }
+.case-caption {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .06em;
+  color: var(--muted);
+  background: #fbf9f3;
+  border-top: 1px solid var(--line);
+  margin: 0;
+  padding: 8px 12px;
+}
+
 .case-media img.case-secondary {
   border-top: 1px solid var(--line-strong);
   aspect-ratio: 16 / 9;

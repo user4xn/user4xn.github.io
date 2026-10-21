@@ -39,6 +39,7 @@
     "case2.tag": "PRODUCT OVERVIEW",
     "case2.alt": "Danz Pos: tablet kasir, panel pesanan, pratinjau struk, dan printer thermal",
     "case2.alt2": "Dashboard kasir menampilkan pendapatan hari ini, jumlah transaksi, dan total produk",
+    "case2.caption": "Dashboard asli — nama toko dan branding bisa diatur per tenant.",
     "case2.sub": "Aplikasi kasir offline-first untuk restoran buffet",
     "case2.p1": "Alur kasir dengan antrean pesanan, perhitungan pajak, dan checkout satu ketuk — dibangun sebagai PWA yang bisa dipasang.",
     "case2.p2": "Sinkronisasi cloud dengan indikator status, sehingga koneksi putus tidak menghentikan layanan di meja kasir.",
