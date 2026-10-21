@@ -87,7 +87,7 @@
   <section class="work" id="work">
     <header class="section-head">
       <h2 data-i18n="work.title">Selected work</h2>
-      <p class="section-sub" data-i18n="work.sub">Three systems I designed and built: self-hosted deployment tooling, a cashier PWA, and a live vessel-tracking backend for a government ministry.</p>
+      <p class="section-sub" data-i18n="work.sub">Four systems I designed and built: self-hosted deployment tooling, a cashier PWA, a live vessel-tracking backend for a government ministry, and one showcase that never shipped.</p>
     </header>
 
     <article class="case">
@@ -143,6 +143,25 @@
           <li data-i18n="case3.p3">Load-tested for thousands of concurrent vessel connections, with the API documented for the ministry's own integrations.</li>
         </ul>
         <p class="case-links"><span class="case-note" data-i18n="case3.note">Private product · walkthrough on request</span></p>
+      </div>
+    </article>
+
+    <article class="case case-rev">
+      <div class="case-media case-media-mock">
+        <p class="case-tag" data-i18n="case4.tag">SHOWCASE · BUILT, NOT RELEASED</p>
+        <img src="assets/img/lemparkoin-dashboard.webp?v=9" width="1400" height="678" alt="Lemparkoin dashboard: coin wallet balance, incoming and outgoing totals and a recent donors table" data-i18n-alt="case4.alt" loading="lazy">
+        <img class="case-secondary" src="assets/img/lemparkoin-alert.webp?v=9" width="1400" height="678" alt="Stream overlay settings: widget URL, minimum donation, voice and text-to-speech thresholds" data-i18n-alt="case4.alt2" loading="lazy">
+      </div>
+      <div class="case-body">
+        <p class="case-meta"><span>2025</span><span>Go · Gin · GORM · RabbitMQ · Redis · PostgreSQL</span></p>
+        <h3><span class="case-index">04</span>Lemparkoin</h3>
+        <p class="case-sub" data-i18n="case4.sub">Donation and live-overlay platform for streamers — built end to end, not released</p>
+        <ul class="case-points">
+          <li data-i18n="case4.p1">Tipping flow with its own coin wallet: top-up, withdrawal, a 3% platform fee and per-streamer transaction history.</li>
+          <li data-i18n="case4.p2">OBS browser-source overlays pushed over WebSocket — donation alerts, text-to-speech, QR donation page, milestone goals and leaderboards.</li>
+          <li data-i18n="case4.p3">Payments handled by a separate Go service consuming RabbitMQ events, so settlement could scale and fail independently of the wallet API.</li>
+        </ul>
+        <p class="case-links"><span class="case-note" data-i18n="case4.note">Showcase — the product was built and tested but never launched.</span></p>
       </div>
     </article>
   </section>
