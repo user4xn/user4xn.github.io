@@ -658,7 +658,7 @@ p:last-child { margin-bottom: 0; }
   .metric:nth-child(1), .metric:nth-child(2) { border-bottom: 1px solid var(--line); }
   .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .timeline li { grid-template-columns: 1fr; gap: 8px; }
-  .portrait img { aspect-ratio: 4 / 3; object-position: 50% 22%; }
+  .portrait img { aspect-ratio: 4 / 5; object-position: 50% 12%; }
 }
 
 @media (max-width: 620px) {
