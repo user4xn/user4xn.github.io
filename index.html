@@ -87,7 +87,7 @@
   <section class="work" id="work">
     <header class="section-head">
       <h2 data-i18n="work.title">Selected work</h2>
-      <p class="section-sub" data-i18n="work.sub">Three systems I designed and built: infrastructure tooling, a cashier PWA, and a wallet platform split into platform and payment services.</p>
+      <p class="section-sub" data-i18n="work.sub">Three systems I designed and built: self-hosted deployment tooling, a cashier PWA, and a live vessel-tracking backend for a government ministry.</p>
     </header>
 
     <article class="case">
@@ -130,18 +130,17 @@
 
     <article class="case">
       <div class="case-media case-media-mock">
-        <p class="case-tag" data-i18n="case3.tag">DASHBOARD</p>
-        <img src="assets/img/lemparkoin-dashboard.webp?v=7" width="1400" height="678" alt="Lemparkoin dashboard: coin wallet balance, incoming and outgoing totals, recent donor table" data-i18n-alt="case3.alt">
-        <img class="case-secondary" src="assets/img/lemparkoin-alert.webp?v=7" width="1400" height="678" alt="Stream overlay alert settings: widget URL, minimum donation, voice and text-to-speech thresholds" data-i18n-alt="case3.alt2">
+        <p class="case-tag" data-i18n="case3.tag">LIVE DASHBOARD</p>
+        <img src="assets/img/simple.webp?v=8" width="1400" height="682" alt="SIMPLE harbour dashboard: vessel positions on a map with a geofence polygon, check-in table and vessel detail panel" data-i18n-alt="case3.alt">
       </div>
       <div class="case-body">
-        <p class="case-meta"><span>2025</span><span>Go · Gin · GORM · RabbitMQ · Redis · PostgreSQL</span></p>
-        <h3><span class="case-index">03</span>Lemparkoin</h3>
-        <p class="case-sub" data-i18n="case3.sub">Donation platform and live overlays for Indonesian streamers</p>
+        <p class="case-meta"><span>2023</span><span>Go · WebSocket · Node.js · Geofencing</span></p>
+        <h3><span class="case-index">03</span>SIMPLE — Ship Parking</h3>
+        <p class="case-sub" data-i18n="case3.sub">Harbour vessel tracking for Indonesia's Ministry of Marine Affairs and Fisheries</p>
         <ul class="case-points">
-          <li data-i18n="case3.p1">Tipping flow with its own coin wallet: top-up, withdrawal, 3% platform fee, and a per-streamer transaction history.</li>
-          <li data-i18n="case3.p2">OBS browser-source overlays pushed over WebSocket — donation alerts, text-to-speech, QR donation page, milestone goals and leaderboards.</li>
-          <li data-i18n="case3.p3">Payments run as a separate Go service consuming RabbitMQ events, so settlement scales and fails independently of the wallet API.</li>
+          <li data-i18n="case3.p1">Automatic check-in / check-out derived from live GPS position inside harbour geofences, with boundaries edited as map polygons rather than code.</li>
+          <li data-i18n="case3.p2">WebSocket dashboard for vessel positions and status; a Node.js pass classifies each position as water or land from map tiles so arrival events cannot fire on a road.</li>
+          <li data-i18n="case3.p3">Load-tested for thousands of concurrent vessel connections, with the API documented for the ministry's own integrations.</li>
         </ul>
         <p class="case-links"><span class="case-note" data-i18n="case3.note">Private product · walkthrough on request</span></p>
       </div>

@@ -26,7 +26,7 @@
     "metric.awards": "finalis LKS tingkat provinsi",
 
     "work.title": "Karya pilihan",
-    "work.sub": "Tiga sistem yang saya rancang dan bangun: tooling infrastruktur, aplikasi kasir PWA, dan platform dompet digital yang dipisah menjadi layanan platform dan pembayaran.",
+    "work.sub": "Tiga sistem yang saya rancang dan bangun: tooling deploy self-hosted, aplikasi kasir PWA, dan backend pelacakan kapal untuk kementerian.",
 
     "case1.tag": "DASHBOARD",
     "case1.alt": "Dashboard ShipDude menampilkan container aktif, kontrol rollback, dan bootstrap CI/CD",
@@ -46,13 +46,12 @@
     "case2.p3": "Cetak struk thermal 58 mm dengan pratinjau langsung, plus laporan penjualan untuk pemilik toko.",
     "case2.note": "Produk privat · demo tersedia atas permintaan",
 
-    "case3.tag": "DASHBOARD",
-    "case3.alt": "Dashboard Lemparkoin: saldo koin, total uang masuk dan keluar, serta tabel pelempar terbaru",
-    "case3.alt2": "Pengaturan alert overlay: widget URL, nominal minimum donasi, suara, dan text-to-speech",
-    "case3.sub": "Platform donasi dan overlay live untuk streamer Indonesia",
-    "case3.p1": "Alur tipping dengan dompet koin sendiri: top-up, penarikan, fee platform 3%, dan riwayat transaksi per streamer.",
-    "case3.p2": "Overlay browser source OBS dikirim lewat WebSocket — alert donasi, text-to-speech, halaman QR donasi, target milestone, dan leaderboard.",
-    "case3.p3": "Pembayaran berjalan sebagai layanan Go terpisah yang mengonsumsi event RabbitMQ, sehingga settlement bisa diskalakan dan gagal independen dari API dompet.",
+    "case3.tag": "LIVE DASHBOARD",
+    "case3.alt": "Dashboard SIMPLE: posisi kapal di peta dengan poligon geofence, tabel check-in, dan panel detail kapal",
+    "case3.sub": "Pelacakan kapal pelabuhan untuk Kementerian Kelautan dan Perikanan",
+    "case3.p1": "Check-in / check-out otomatis dari posisi GPS di dalam geofence pelabuhan, dengan batas kawasan diubah sebagai poligon peta — bukan lewat kode.",
+    "case3.p2": "Dashboard WebSocket untuk posisi dan status kapal; proses Node.js memilah tiap posisi sebagai air atau darat dari tile peta, jadi event kedatangan tidak bisa terpicu di jalan.",
+    "case3.p3": "Diuji beban untuk ribuan koneksi kapal bersamaan, dengan API terdokumentasi untuk integrasi internal kementerian.",
 
     "about.title": "Tentang",
     "about.p1": "Saya mulai sebagai web developer pada 2019 dan sejak itu lebih banyak menghabiskan waktu di bagian produk yang tidak terlihat: aturan harga, ledger, antrean, integrasi, migrasi. Di Komerce saya mengerjakan platform logistik — algoritma yang menghitung ongkir, memindahkan saldo, dan menyelesaikan transaksi — serta integrasi dengan JNE, SICEPAT, Ninja, SAP, SPX, dan LION.",
