@@ -301,6 +301,14 @@ p:last-child { margin-bottom: 0; }
 }
 .case-media-mock img,
 .case-media-diagram img { object-fit: contain; }
+
+/* contain + tinggi natural: jangan crop screenshot UI */
+.case-media.case-media-mock img {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+  background: #fbf9f3;
+}
 .case-media-shot img { aspect-ratio: 2.2; object-fit: cover; background: #0d1016; }
 .case-media img {
   width: 100%;
@@ -319,6 +327,14 @@ p:last-child { margin-bottom: 0; }
   border-top: 1px solid var(--line);
   margin: 0;
   padding: 8px 12px;
+}
+
+.case-media.case-media-mock img.case-secondary {
+  object-fit: contain;
+  aspect-ratio: auto;
+  height: auto;
+  background: #fbf9f3;
+  padding: 6px;
 }
 
 .case-media img.case-secondary {

@@ -129,18 +129,19 @@
     </article>
 
     <article class="case">
-      <div class="case-media case-media-diagram">
-        <p class="case-tag" data-i18n="case3.tag">SERVICE MAP</p>
-        <img src="assets/img/lemparkoin.svg?v=5" width="1400" height="700" alt="Lemparkoin service map: backend API, payment service, RabbitMQ, Redis and PostgreSQL" data-i18n-alt="case3.alt">
+      <div class="case-media case-media-mock">
+        <p class="case-tag" data-i18n="case3.tag">DASHBOARD</p>
+        <img src="assets/img/lemparkoin-dashboard.webp?v=7" width="1400" height="678" alt="Lemparkoin dashboard: coin wallet balance, incoming and outgoing totals, recent donor table" data-i18n-alt="case3.alt">
+        <img class="case-secondary" src="assets/img/lemparkoin-alert.webp?v=7" width="1400" height="678" alt="Stream overlay alert settings: widget URL, minimum donation, voice and text-to-speech thresholds" data-i18n-alt="case3.alt2">
       </div>
       <div class="case-body">
         <p class="case-meta"><span>2025</span><span>Go · Gin · GORM · RabbitMQ · Redis · PostgreSQL</span></p>
         <h3><span class="case-index">03</span>Lemparkoin</h3>
-        <p class="case-sub" data-i18n="case3.sub">Wallet platform with a separate payment service</p>
+        <p class="case-sub" data-i18n="case3.sub">Donation platform and live overlays for Indonesian streamers</p>
         <ul class="case-points">
-          <li data-i18n="case3.p1">Split into platform and payment services so charge handling can scale and fail independently of the wallet API.</li>
-          <li data-i18n="case3.p2">RabbitMQ consumer processes payment events with retries; ledger writes keep balances consistent and auditable.</li>
-          <li data-i18n="case3.p3">Layered architecture (http → app → repository), JWT auth, OpenAPI docs, Docker Compose for dev and production.</li>
+          <li data-i18n="case3.p1">Tipping flow with its own coin wallet: top-up, withdrawal, 3% platform fee, and a per-streamer transaction history.</li>
+          <li data-i18n="case3.p2">OBS browser-source overlays pushed over WebSocket — donation alerts, text-to-speech, QR donation page, milestone goals and leaderboards.</li>
+          <li data-i18n="case3.p3">Payments run as a separate Go service consuming RabbitMQ events, so settlement scales and fails independently of the wallet API.</li>
         </ul>
         <p class="case-links"><span class="case-note" data-i18n="case3.note">Private product · walkthrough on request</span></p>
       </div>
