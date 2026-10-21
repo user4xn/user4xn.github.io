@@ -71,6 +71,9 @@
     "case4.p3": "Pembayaran ditangani layanan Go terpisah yang mengonsumsi event RabbitMQ, sehingga settlement bisa diskalakan dan gagal independen dari API dompet.",
     "case4.note": "Showcase — produk sudah dibangun dan diuji, tapi tidak pernah diluncurkan.",
 
+    "quote.text": "Saya membangun untuk insiden jam 3 pagi, bukan untuk demo.",
+    "quote.note": "Cara saya menilai pekerjaan backend: harus tetap bertahan saat tidak ada yang mengawasi.",
+
     "about.title": "Tentang",
     "about.p1": "Saya mulai sebagai web developer pada 2019 dan sejak itu lebih banyak menghabiskan waktu di bagian produk yang tidak terlihat: aturan harga, ledger, antrean, integrasi, migrasi. Di Komerce saya mengerjakan platform logistik — algoritma yang menghitung ongkir, memindahkan saldo, dan menyelesaikan transaksi — serta integrasi dengan JNE, SICEPAT, Ninja, SAP, SPX, dan LION.",
     "about.p2": "Saya menyukai Clean Architecture bukan sebagai upacara, tapi karena ia membuat perubahan jadi murah: ketika kurir mengubah API-nya, atau penyedia pembayaran mengubah callback-nya, dampaknya harus cukup di satu paket. Saya juga memakai alur kerja berbantuan AI (tooling MCP, review agentik) agar bagian membosankan cepat — sambil tetap memegang kepemilikan atas kode yang saya kirim.",
