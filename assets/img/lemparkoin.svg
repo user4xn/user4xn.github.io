@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-label="Lemparkoin service map: client, backend API, payment service, Redis, RabbitMQ and PostgreSQL">
+  <style>
+    .bg { fill: #f3efe6; }
+    .grid { stroke: #e3ddce; stroke-width: 1; }
+    .box { fill: #fbf9f4; stroke: #c9c2b0; stroke-width: 2; }
+    .boxink { fill: #14120f; stroke: #14120f; stroke-width: 2; }
+    .lbl { font: 700 26px 'JetBrains Mono', ui-monospace, monospace; fill: #14120f; letter-spacing: .04em; }
+    .lblw { fill: #f7f3ea; }
+    .sub { font: 400 17px 'JetBrains Mono', ui-monospace, monospace; fill: #6b665e; }
+    .subw { fill: #bdb6a7; }
+    .tag { font: 700 16px 'JetBrains Mono', ui-monospace, monospace; fill: #b4462a; letter-spacing: .16em; }
+    .wire { stroke: #8d8574; stroke-width: 2; fill: none; }
+    .wireacc { stroke: #b4462a; stroke-width: 2; fill: none; stroke-dasharray: 7 7; }
+    .ar { fill: #8d8574; }
+    .aracc { fill: #b4462a; }
+    .wirelbl { font: 400 14px 'JetBrains Mono', ui-monospace, monospace; fill: #8d8574; }
+  </style>
+
+  <rect class="bg" width="1400" height="760"/>
+  <g class="grid" opacity=".65">
+    <path d="M0 150h1400M0 300h1400M0 450h1400M0 600h1400"/>
+    <path d="M350 0v760M700 0v760M1050 0v760"/>
+  </g>
+
+  <text class="tag" x="54" y="72">LEMPARKOIN · SERVICE MAP</text>
+  <text class="sub" x="54" y="102">Go · Gin · GORM · Redis · RabbitMQ · PostgreSQL</text>
+
+  <!-- CLIENT -->
+  <rect class="box" x="54" y="330" width="246" height="130" rx="12"/>
+  <text class="lbl" x="78" y="382">CLIENT</text>
+  <text class="sub" x="78" y="412">web + mobile</text>
+
+  <!-- BACKEND API -->
+  <rect class="box" x="360" y="300" width="330" height="190" rx="12"/>
+  <text class="lbl" x="384" y="352">BACKEND API</text>
+  <text class="sub" x="384" y="384">auth · wallet</text>
+  <text class="sub" x="384" y="410">ledger · users</text>
+
+  <!-- PAYMENT SERVICE -->
+  <rect class="boxink" x="740" y="300" width="330" height="190" rx="12"/>
+  <text class="lbl lblw" x="764" y="352">PAYMENTS</text>
+  <text class="sub subw" x="764" y="384">charge · callback</text>
+  <text class="sub subw" x="764" y="410">settlement</text>
+
+  <!-- POSTGRES -->
+  <rect class="box" x="1120" y="270" width="230" height="380" rx="12"/>
+  <text class="lbl" x="1144" y="322">POSTGRES</text>
+  <text class="sub" x="1144" y="354">balances</text>
+  <text class="sub" x="1144" y="380">ledger entries</text>
+  <text class="sub" x="1144" y="406">transactions</text>
+  <text class="sub" x="1144" y="432">audit trail</text>
+
+  <!-- REDIS -->
+  <rect class="box" x="360" y="570" width="330" height="120" rx="12"/>
+  <text class="lbl" x="384" y="620">REDIS</text>
+  <text class="sub" x="384" y="650">cache · sessions</text>
+
+  <!-- RABBITMQ -->
+  <rect class="box" x="740" y="570" width="330" height="120" rx="12"/>
+  <text class="lbl" x="764" y="620">RABBITMQ</text>
+  <text class="sub" x="764" y="650">payment events</text>
+
+  <!-- wires -->
+  <path class="wire" d="M300 395h48"/>
+  <path class="ar" d="M352 388l12 7-12 7z"/>
+  <text class="wirelbl" x="304" y="386">HTTPS</text>
+
+  <path class="wire" d="M690 395h38"/>
+  <path class="ar" d="M732 388l12 7-12 7z"/>
+  <text class="wirelbl" x="694" y="386">REST</text>
+
+  <path class="wireacc" d="M1070 395h38"/>
+  <path class="aracc" d="M1112 388l12 7-12 7z"/>
+  <text class="wirelbl" x="1072" y="386">persist</text>
+
+  <path class="wire" d="M905 490v68"/>
+  <path class="ar" d="M898 552l7 12 7-12z"/>
+  <text class="wirelbl" x="922" y="536">publish</text>
+
+  <path class="wire" d="M740 620h-38"/>
+  <path class="ar" d="M708 613l-12 7 12 7z"/>
+  <text class="wirelbl" x="700" y="606">consume</text>
+
+  <path class="wire" d="M525 570v-68"/>
+  <path class="ar" d="M518 508l7-12 7 12z"/>
+  <text class="wirelbl" x="542" y="536">cache</text>
+</svg>
