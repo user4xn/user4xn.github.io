@@ -648,6 +648,9 @@ p:last-child { margin-bottom: 0; }
 
 @media (max-width: 900px) {
   .hero-grid, .case, .about-grid, .agents-grid { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-areas: "lead" "portrait" "copy"; }
+  .portrait { max-width: 420px; }
+  h1 { font-size: clamp(2.15rem, 8.4vw, 3.2rem); max-width: 18ch; }
   .case-rev .case-media { order: 0; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .metric:nth-child(2) { border-right: 0; }
